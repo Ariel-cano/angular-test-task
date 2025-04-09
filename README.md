@@ -1,5 +1,6 @@
 в mock-server вызвал createRandomSample, чтобы появился скролл;
 
 Пример работы: 
-![image](https://github.com/user-attachments/assets/c0f2a4e6-4c02-4ce9-ab1e-3c6c324d9f82)
+![image](https://github.com/user-attachments/assets/5f1d5f53-21fd-42fa-89bd-7f7a0652d695)
+
 
