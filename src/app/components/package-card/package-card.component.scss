@@ -1,0 +1,71 @@
+.package-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 8px;
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  .package-header {
+    border-bottom: 1px solid #b1b1b1;
+    padding: 10px;
+    margin-bottom: 12px;
+
+    &.highlighted {
+      border-color: #2196F3;
+      background-color: #E3F2FD;
+    }
+
+    &.dependency {
+      border-color: #4CAF50;
+      background-color: #E8F5E9;
+    }
+
+    .package-prefix {
+      color: #fd8f23;
+      font-weight: bold;
+    }
+
+    .package-name {
+      font-weight: 500;
+    }
+  }
+
+  .package-body {
+    padding-left: 10px;
+    .package-stat-dep{
+      display: flex;
+      margin-bottom: 8px;
+
+      .stat-label {
+        color: #d6d2d2;
+      }
+
+      .stat-value {
+        font-weight: 500;
+        color: #666666;
+      }
+
+    }
+    .package-stat {
+      display: flex;
+      margin-bottom: 8px;
+
+      .stat-label {
+        color: #666;
+      }
+
+      .stat-value {
+        font-weight: 500;
+
+      }
+    }
+
+  }
+}

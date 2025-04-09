@@ -1,0 +1,21 @@
+<div class="package-card"
+     (mouseenter)="onMouseEnter()"
+     (mouseleave)="onMouseLeave()">
+  <div class="package-header"
+       [class.highlighted]="isHighlighted"
+       [class.dependency]="isDependency"
+  >
+    <span class="package-prefix" *ngIf="getPackageNameParts().prefix">
+      {{getPackageNameParts().prefix}}/
+    </span>
+    <span class="package-name">{{getPackageNameParts().name}}</span>
+  </div>
+  <div class="package-body">
+    <div class="package-stat">
+      <span class="stat-value" > {{formatNumber(package.weeklyDownloads)}}  <img src="/download.svg" width="15" height="15" alt="downloads"></span>
+    </div>
+    <div class="package-stat-dep">
+      <span class="stat-value">{{formatNumber(package.dependencyCount)}} dependencies</span>
+    </div>
+  </div>
+</div>
